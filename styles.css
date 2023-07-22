@@ -1,0 +1,50 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* rules for top nav element */
+
+@media (min-width: 1000px){
+.navList{
+    list-style: none;
+   display: grid;
+   grid-template-columns: repeat(9, 1fr);
+   padding: 20px;
+}
+
+}
+
+
+.fa-magnifying-glass{
+color: navy;
+}
+
+.navyBox {
+    background-color: navy;
+    display: relative;
+    height: 320px;
+    width: 100vw;
+    z-index: -1;
+}
+
+.schwab {
+    z-index: 5;
+}
+
+/* text over the navy box */
+.investingFlex{
+    position: absolute;
+    top: 300px;
+    color: white;
+}
+
+.investingLeft {
+    position: absolute;
+    left: 20%;
+}
+
+.investingRight {
+    position: absolute;
+    right: 80%;
+}
