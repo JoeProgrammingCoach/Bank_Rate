@@ -2,7 +2,15 @@
     box-sizing: border-box;
     margin: 0;
 }
-
+.navList{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+.navList :hover {
+    cursor: pointer;
+}
 /* rules for top nav element */
 
 @media (min-width: 1000px){
@@ -47,4 +55,12 @@ color: navy;
 .investingRight {
     position: absolute;
     right: 80%;
+}
+
+/* footer rules */
+.boldUnderLine {
+    /*border-bottom: 2px solid black; */
+    text-decoration: solid underline 2px black;
+    
+    font-weight: bold;
 }
