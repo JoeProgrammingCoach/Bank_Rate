@@ -81,10 +81,16 @@ color: navy;
 
 .navyBox {
     background-color: navy;
-    display: relative;
     height: 320px;
     width: 100vw;
     z-index: -1;
+    position: relative;
+}
+
+.positionBrokerageText{
+    position: absolute;
+    left: 5%;
+    top: 20%;
 }
 
 .schwab {
@@ -94,18 +100,26 @@ color: navy;
 /* text over the navy box */
 .investingFlex{
     position: absolute;
-    top: 300px;
+    top: 50px;
+    left: 50px;
     color: white;
 }
 
 .investingLeft {
     position: absolute;
-    left: 20%;
+    left:50px;
 }
 
 .investingRight {
     position: absolute;
-    right: 80%;
+    word-break: keep-all;
+    left: calc(100vw - 200px);
+    top: 0px;
+    border-bottom: 2px solid white;
+}
+
+.investingRight:hover {
+    color: yellow;
 }
 
 /* footer rules */
@@ -118,8 +132,13 @@ color: navy;
 
 
 .footerGrid{
+
     display: grid;
     text-decoration: none;
-    grid-template-columns: 3;
-    grid-template-rows: 9;
+    grid-template-columns: repeat( auto-fill, minmax(400px, 1fr));
+    line-height: 50px;
+} 
+
+.footerGrid li::marker {
+    content: " ";
 }
