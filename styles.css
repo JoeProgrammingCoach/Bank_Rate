@@ -4,6 +4,7 @@
 }
 /*  MODAL RULES  */
 .modal {
+    display: none;
     position: fixed;
     bottom: 25px;
     right: 25px;
@@ -16,6 +17,13 @@
 
 .relativePosition {
     position: relative;
+}
+
+.closeX {
+    position: absolute;
+    right: -50px;
+    top: -10px;
+    color: white;
 }
 
 .absoluteLeft{
@@ -135,6 +143,8 @@ color: navy;
 .relatedArticlesGrid img{
     
     border: 5px solid red;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
 }
 
 
@@ -157,8 +167,12 @@ color: navy;
     display: grid;
     text-decoration: none;
     grid-template-columns: repeat( auto-fill, minmax(400px, 1fr));
-    line-height: 50px;
+    /*line-height: 50px; */
 } 
+
+.footerGrid ul {
+    margin-top: 50px;
+}
 
 .footerGrid li::marker {
     content: " ";
