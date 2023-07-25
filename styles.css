@@ -122,6 +122,27 @@ color: navy;
     color: yellow;
 }
 
+
+
+/*  Related Articles Grid */
+.relatedArticlesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 10px;
+}
+
+.relatedArticlesGrid img{
+    
+    border: 5px solid red;
+}
+
+
+
+
+
+
+
 /* footer rules */
 .boldUnderLine {
     border-bottom: 2px solid black;
@@ -142,3 +163,5 @@ color: navy;
 .footerGrid li::marker {
     content: " ";
 }
+
+/* media query @850px How We Make money heading and underline will break, need to change layout */
